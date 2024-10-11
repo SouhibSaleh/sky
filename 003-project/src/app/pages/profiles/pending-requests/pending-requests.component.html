@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="history-header">
+        <i class="fa-solid fa-list"></i>
+        <h2>Pending Requests</h2>
+
+    </div>
+    <hr>
+    <div class="card-grid">
+        <div class="card" *ngFor="let request of pendingRequsts">
+            <img [src]="request.imgUrl" alt="Profile Image" class="profile-img">
+            <div class="card-body">
+                <h3>{{request.firstName}} {{request.lastName}}</h3>
+                <p><strong>Submitted on:</strong> {{request.submitedOn|date:'yyyy/MM/dd'}}</p>
+                <p>
+                    <strong>Duration:</strong>
+                    {{request.duration}} Weeks, {{ request.firstDate | date: 'yyyy/MM/dd' }} - {{ request.lastDate |date:'yyyy/MM/dd'}}
+
+                </p>
+                <p><strong>Currently at:</strong> <span class="current-location">{{request.currentlyAt}}</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="view-more">
+        <a href="#">View More ></a>
+    </div>
+</div>

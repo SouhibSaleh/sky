@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="header">
+        <h2>Welcome Back {{admin.firstName}}! Here are your latest updates.</h2>
+        <button class="new-request">New Request</button>
+    </div>
+
+    <div class="profile-section">
+        <app-profile-card [admin]="admin" style="width: 100%;"></app-profile-card>
+        <app-request-leave [admin]="admin"></app-request-leave>
+    </div>
+</div>

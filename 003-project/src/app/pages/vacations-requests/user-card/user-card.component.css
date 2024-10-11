@@ -1,0 +1,122 @@
+.vacation-cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.vacation-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.decline,
+.approve {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.decline {
+    background-color: white;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.view-more {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #28a745;
+    text-decoration: none;
+}
+
+.search_icon {
+    width: 3.75em;
+    height: 4em;
+}
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .vacation-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vacation-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+.add-numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+
+app-pagination {
+    margin: 0 auto;
+}

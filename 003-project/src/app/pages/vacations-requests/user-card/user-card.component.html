@@ -1,0 +1,23 @@
+<div class="add-numbers">
+    <div class="vacation-cards" id="vacationCards">
+        <div *ngFor="let user of User | slice:0:maxCardsToShow" class="vacation-cards" id="vacationCards"
+            class="vacation-card" data-salary="1000">
+
+            <img [src]="user.Img" alt="" class="profile-pic">
+            <h4 [innerHTML]="(user.Firstname)+' '+(user.Lastname)|Highlight:searchTerm"></h4>
+
+            <p [innerHTML]="'Submitted on:' +(user.Date|Highlight:searchTerm)">Submitted on: {{user.Date}}</p>
+            <p>Duration: <strong [innerHTML]="user.Duration|Highlight:searchTerm"></strong></p>
+
+            <p>Salary: <strong [innerHTML]="user.Salary+'$'|Highlight:searchTerm"></strong>
+            </p>
+
+            <div class="action-buttons">
+                <button class="decline" (click)="onDeclineRequest(user.Id)">Decline</button>
+                <button class="approve">Approve</button>
+            </div>
+        </div>
+
+    </div>
+    <app-pagination [numberOfCards]="numberOfCards" (currentPage)="getPageNumber($event)"></app-pagination>
+</div>

@@ -1,0 +1,234 @@
+.history-card {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+}
+
+.history-header i {
+    font-size: 40px;
+    margin: 0.1em;
+    color:#198754
+}
+
+.history-header h2 {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.history-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.history-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    flex: 0 1 20%;
+    margin: 1.25em;
+}
+
+.history-item h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+.history-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.history-item .days {
+    font-weight: bold;
+    color: #333;
+}
+
+.view-more {
+    text-align: right;
+    margin-top: 30%;
+    margin-left: 90%;
+
+}
+
+.view-more a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-more a:hover {
+    text-decoration: underline;
+}
+
+.search_icon {
+    height: 5em;
+    width: 5em;
+}
+
+.container {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card-body {
+    flex: 1;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.current-location {
+    color: #198754;
+    font-weight: bold;
+}
+
+.view-more {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: #198754;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .top-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-request {
+        margin-top: 15px;
+        align-self: center;
+    }
+
+    .info-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-items {
+        flex-direction: column;
+    }
+
+    .history-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-info h3 {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-item {
+        width: 100%;
+        text-align: left;
+    }
+}

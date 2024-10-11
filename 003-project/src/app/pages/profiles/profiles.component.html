@@ -1,0 +1,19 @@
+<div class="profile-card-extended">
+    <app-profile-card [admin]="admin">
+        <div class="reporting">
+            <i class="fa-solid fa-hourglass-start"></i>
+            <p><strong>Lifetime:</strong> {{admin.lifeTime}} Years</p>
+        </div>
+        <div class="reporting">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <p><strong>Vacation Days Left:</strong> {{admin.vacationDayLeft}} Days</p>
+        </div>
+        <div class="reporting">
+            <i class="fa-solid fa-prescription-bottle-medical"></i>
+            <p><strong>Sick Days Left:</strong> {{admin.sickDayLeft}} Days</p>
+        </div>
+
+    </app-profile-card>
+</div>
+<app-history></app-history>
+<app-pending-requests></app-pending-requests>

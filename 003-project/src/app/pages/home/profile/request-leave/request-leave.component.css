@@ -1,0 +1,44 @@
+.request-card {
+    flex: 1;
+    min-width: 150px;
+    background-color: #267E41;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    display: flex;
+
+}
+
+.request-card h1 {
+    font-size: 6em;
+    font-weight: 400;
+}
+
+
+h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+
+.request-card-column i {
+    font-size: 70px;
+}
+
+
+
+.ReqAndLeave {
+    display: flex;
+}
+
+.request-card {
+    margin: 0.5em;
+}

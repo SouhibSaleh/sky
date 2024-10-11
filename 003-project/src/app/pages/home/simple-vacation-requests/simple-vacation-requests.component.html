@@ -1,0 +1,18 @@
+<div class="main-container">
+    <div class="vacation-requests-container">
+        <div class="vacation-header">
+            <div class="vacation-title">
+                <i class="fa-solid fa-list" style="font-size: 50px;"></i>
+                <h3>Vacation Requests</h3>
+            </div>
+
+        </div>
+
+        <div class="vacation-cards">
+            <app-user-card [maxCardsToShow]="maxCardsToShow" [User]="userList"
+                (deletedId)="updateData($event)"></app-user-card>
+        </div>
+
+        <a href="vacation_requests" class="view-more">View More ></a>
+    </div>
+</div>

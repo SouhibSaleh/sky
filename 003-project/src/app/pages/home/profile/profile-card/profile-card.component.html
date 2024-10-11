@@ -1,0 +1,24 @@
+<div class="profile-card">
+    <div class="profile-info">
+        <div class="first_part">
+            <img [src]="admin().imgUrl" alt="Profile Picture" class="profile-pic">
+            <div class="profile-details">
+                <h3>{{admin().firstName}} {{admin().lastName}}</h3>
+                <p>{{admin().role}}</p>
+            </div>
+        </div>
+        <button class="view-profile">View Profile</button>
+    </div>
+
+    <div class="additional-info">
+        <div class="reporting">
+            <i class="fa-solid fa-user"></i>
+            <p><strong>Reporting To:</strong> {{admin().reportingTo}}</p>
+        </div>
+        <div class="reporting">
+            <i class="fa-solid fa-signal"></i>
+            <p><strong>Corporate Level:</strong> Level {{admin().corporateLevel}}</p>
+        </div>
+        <ng-content></ng-content>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="main-container">
+    <div class="vacation-requests-container">
+        <div class="vacation-header">
+            <div class="vacation-title">
+                <img src="/images/search_icon.png" class="search_icon">
+                <h3>Vacation Requests</h3>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" [(ngModel)]="searchTerm" placeholder="Enter text to highlight"
+                    class="search-input">
+
+            </div>
+        </div>
+
+
+        <app-user-card [searchTerm]="searchTerm" [numberOfCards]="numberOfCards" [maxCardsToShow]="maxCardToShow"
+            [User]="inputList" (pageNumber)="pageNumberChange($event)" (deletedId)="updateData($event)">
+        </app-user-card>
+
+    </div>
+</div>

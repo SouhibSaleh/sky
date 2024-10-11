@@ -1,0 +1,79 @@
+.main-container {
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.vacation-requests-container {
+    padding: 20px;
+}
+
+.vacation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.vacation-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.vacation-cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+
+h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.search_icon {
+    width: 3.75em;
+    height: 4em;
+}

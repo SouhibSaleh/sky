@@ -1,0 +1,6 @@
+<div class="page-number" [hidden]="isHidden()">
+    <i class="fa-solid fa-arrow-left" (click)="minus()"></i>
+    <a *ngFor="let x of listOfNumbers" (click)="setPageNumber(x)"
+        [ngClass]="{'active':getCurrentPageNumber()===x }">{{x}}</a>
+    <i class="fa-solid fa-arrow-right" (click)="plus()"></i>
+</div>

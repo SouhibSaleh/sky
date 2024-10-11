@@ -1,0 +1,17 @@
+<div class="history-card">
+    <div class="history-header">
+        <i class="fa-solid fa-list"></i>
+        <h2>History</h2>
+    </div>
+    <hr>
+    <div class="history-items">
+        <div class="history-item" *ngFor="let requset of historyRequests">
+            <h3>{{requset.type}}</h3>
+            <p>{{requset.startDate}} - {{requset.endDate}} <span class="days">8 days</span></p>
+            <p>Approved by: {{requset.approvedBy}}</p>
+        </div>
+
+        <div class="view-more">
+            <a href="#">View More &gt;</a>
+        </div>
+    </div>

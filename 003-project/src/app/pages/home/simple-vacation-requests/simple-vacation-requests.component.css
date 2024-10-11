@@ -1,0 +1,164 @@
+.main-container {
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.vacation-requests-container {
+    padding: 20px;
+}
+
+.vacation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.vacation-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.vacation-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.vacation-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.decline,
+.approve {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.decline {
+    background-color: white;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.view-more {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #28a745;
+    text-decoration: none;
+}
+
+.search_icon {
+    width: 3.75em;
+    height: 4em;
+}
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+.request-card-column i {
+    font-size: 70px;
+}
+
+@media (max-width: 768px) {
+    .vacation-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vacation-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}

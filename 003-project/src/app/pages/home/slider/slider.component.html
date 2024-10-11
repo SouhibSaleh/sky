@@ -1,0 +1,11 @@
+<div class="sliderTemp">
+    <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let image of images">
+            <img [src]="image.url" [alt]="image.alt" class="d-block w-100" style="height: 700px;">
+            <div class="carousel-caption">
+                <h5>{{image.headerDes}}</h5>
+                <p>{{image.description}}</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

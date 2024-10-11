@@ -1,0 +1,44 @@
+
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 83%;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.new-request {
+    background-color: #267E41;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+
+}
+
+.profile-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
